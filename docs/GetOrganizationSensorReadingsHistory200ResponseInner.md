@@ -7,17 +7,17 @@ Name | Type | Description | Notes
 **Serial** | Pointer to **string** | Serial number of the sensor that took the reading. | [optional] 
 **Network** | Pointer to [**GetOrganizationSensorReadingsHistory200ResponseInnerNetwork**](GetOrganizationSensorReadingsHistory200ResponseInnerNetwork.md) |  | [optional] 
 **Ts** | Pointer to **string** | Time at which the reading occurred, in ISO8601 format. | [optional] 
-**Metric** | Pointer to **string** | Type of sensor reading. Possible values are temperature, humidity, water, door, tvoc, pm25, noise, indoorAirQuality, button, and battery. | [optional] 
-**Temperature** | Pointer to [**GetOrganizationSensorReadingsHistory200ResponseInnerTemperature**](GetOrganizationSensorReadingsHistory200ResponseInnerTemperature.md) |  | [optional] 
-**Humidity** | Pointer to [**GetOrganizationSensorReadingsHistory200ResponseInnerHumidity**](GetOrganizationSensorReadingsHistory200ResponseInnerHumidity.md) |  | [optional] 
-**Water** | Pointer to [**GetOrganizationSensorReadingsHistory200ResponseInnerWater**](GetOrganizationSensorReadingsHistory200ResponseInnerWater.md) |  | [optional] 
-**Door** | Pointer to [**GetOrganizationSensorReadingsHistory200ResponseInnerDoor**](GetOrganizationSensorReadingsHistory200ResponseInnerDoor.md) |  | [optional] 
-**Tvoc** | Pointer to [**GetOrganizationSensorReadingsHistory200ResponseInnerTvoc**](GetOrganizationSensorReadingsHistory200ResponseInnerTvoc.md) |  | [optional] 
-**Pm25** | Pointer to [**GetOrganizationSensorReadingsHistory200ResponseInnerPm25**](GetOrganizationSensorReadingsHistory200ResponseInnerPm25.md) |  | [optional] 
-**Noise** | Pointer to [**GetOrganizationSensorReadingsHistory200ResponseInnerNoise**](GetOrganizationSensorReadingsHistory200ResponseInnerNoise.md) |  | [optional] 
-**IndoorAirQuality** | Pointer to [**GetOrganizationSensorReadingsHistory200ResponseInnerIndoorAirQuality**](GetOrganizationSensorReadingsHistory200ResponseInnerIndoorAirQuality.md) |  | [optional] 
-**Button** | Pointer to [**GetOrganizationSensorReadingsHistory200ResponseInnerButton**](GetOrganizationSensorReadingsHistory200ResponseInnerButton.md) |  | [optional] 
+**Metric** | Pointer to **string** | Type of sensor reading. | [optional] 
 **Battery** | Pointer to [**GetOrganizationSensorReadingsHistory200ResponseInnerBattery**](GetOrganizationSensorReadingsHistory200ResponseInnerBattery.md) |  | [optional] 
+**Button** | Pointer to [**GetOrganizationSensorReadingsHistory200ResponseInnerButton**](GetOrganizationSensorReadingsHistory200ResponseInnerButton.md) |  | [optional] 
+**Door** | Pointer to [**GetOrganizationSensorReadingsHistory200ResponseInnerDoor**](GetOrganizationSensorReadingsHistory200ResponseInnerDoor.md) |  | [optional] 
+**Humidity** | Pointer to [**GetOrganizationSensorReadingsHistory200ResponseInnerHumidity**](GetOrganizationSensorReadingsHistory200ResponseInnerHumidity.md) |  | [optional] 
+**IndoorAirQuality** | Pointer to [**GetOrganizationSensorReadingsHistory200ResponseInnerIndoorAirQuality**](GetOrganizationSensorReadingsHistory200ResponseInnerIndoorAirQuality.md) |  | [optional] 
+**Noise** | Pointer to [**GetOrganizationSensorReadingsHistory200ResponseInnerNoise**](GetOrganizationSensorReadingsHistory200ResponseInnerNoise.md) |  | [optional] 
+**Pm25** | Pointer to [**GetOrganizationSensorReadingsHistory200ResponseInnerPm25**](GetOrganizationSensorReadingsHistory200ResponseInnerPm25.md) |  | [optional] 
+**Temperature** | Pointer to [**GetOrganizationSensorReadingsHistory200ResponseInnerTemperature**](GetOrganizationSensorReadingsHistory200ResponseInnerTemperature.md) |  | [optional] 
+**Tvoc** | Pointer to [**GetOrganizationSensorReadingsHistory200ResponseInnerTvoc**](GetOrganizationSensorReadingsHistory200ResponseInnerTvoc.md) |  | [optional] 
+**Water** | Pointer to [**GetOrganizationSensorReadingsHistory200ResponseInnerWater**](GetOrganizationSensorReadingsHistory200ResponseInnerWater.md) |  | [optional] 
 
 ## Methods
 
@@ -138,205 +138,30 @@ SetMetric sets Metric field to given value.
 
 HasMetric returns a boolean if a field has been set.
 
-### GetTemperature
+### GetBattery
 
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetTemperature() GetOrganizationSensorReadingsHistory200ResponseInnerTemperature`
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetBattery() GetOrganizationSensorReadingsHistory200ResponseInnerBattery`
 
-GetTemperature returns the Temperature field if non-nil, zero value otherwise.
+GetBattery returns the Battery field if non-nil, zero value otherwise.
 
-### GetTemperatureOk
+### GetBatteryOk
 
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetTemperatureOk() (*GetOrganizationSensorReadingsHistory200ResponseInnerTemperature, bool)`
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetBatteryOk() (*GetOrganizationSensorReadingsHistory200ResponseInnerBattery, bool)`
 
-GetTemperatureOk returns a tuple with the Temperature field if it's non-nil, zero value otherwise
+GetBatteryOk returns a tuple with the Battery field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetTemperature
+### SetBattery
 
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) SetTemperature(v GetOrganizationSensorReadingsHistory200ResponseInnerTemperature)`
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) SetBattery(v GetOrganizationSensorReadingsHistory200ResponseInnerBattery)`
 
-SetTemperature sets Temperature field to given value.
+SetBattery sets Battery field to given value.
 
-### HasTemperature
+### HasBattery
 
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) HasTemperature() bool`
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) HasBattery() bool`
 
-HasTemperature returns a boolean if a field has been set.
-
-### GetHumidity
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetHumidity() GetOrganizationSensorReadingsHistory200ResponseInnerHumidity`
-
-GetHumidity returns the Humidity field if non-nil, zero value otherwise.
-
-### GetHumidityOk
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetHumidityOk() (*GetOrganizationSensorReadingsHistory200ResponseInnerHumidity, bool)`
-
-GetHumidityOk returns a tuple with the Humidity field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetHumidity
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) SetHumidity(v GetOrganizationSensorReadingsHistory200ResponseInnerHumidity)`
-
-SetHumidity sets Humidity field to given value.
-
-### HasHumidity
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) HasHumidity() bool`
-
-HasHumidity returns a boolean if a field has been set.
-
-### GetWater
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetWater() GetOrganizationSensorReadingsHistory200ResponseInnerWater`
-
-GetWater returns the Water field if non-nil, zero value otherwise.
-
-### GetWaterOk
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetWaterOk() (*GetOrganizationSensorReadingsHistory200ResponseInnerWater, bool)`
-
-GetWaterOk returns a tuple with the Water field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetWater
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) SetWater(v GetOrganizationSensorReadingsHistory200ResponseInnerWater)`
-
-SetWater sets Water field to given value.
-
-### HasWater
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) HasWater() bool`
-
-HasWater returns a boolean if a field has been set.
-
-### GetDoor
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetDoor() GetOrganizationSensorReadingsHistory200ResponseInnerDoor`
-
-GetDoor returns the Door field if non-nil, zero value otherwise.
-
-### GetDoorOk
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetDoorOk() (*GetOrganizationSensorReadingsHistory200ResponseInnerDoor, bool)`
-
-GetDoorOk returns a tuple with the Door field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetDoor
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) SetDoor(v GetOrganizationSensorReadingsHistory200ResponseInnerDoor)`
-
-SetDoor sets Door field to given value.
-
-### HasDoor
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) HasDoor() bool`
-
-HasDoor returns a boolean if a field has been set.
-
-### GetTvoc
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetTvoc() GetOrganizationSensorReadingsHistory200ResponseInnerTvoc`
-
-GetTvoc returns the Tvoc field if non-nil, zero value otherwise.
-
-### GetTvocOk
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetTvocOk() (*GetOrganizationSensorReadingsHistory200ResponseInnerTvoc, bool)`
-
-GetTvocOk returns a tuple with the Tvoc field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetTvoc
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) SetTvoc(v GetOrganizationSensorReadingsHistory200ResponseInnerTvoc)`
-
-SetTvoc sets Tvoc field to given value.
-
-### HasTvoc
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) HasTvoc() bool`
-
-HasTvoc returns a boolean if a field has been set.
-
-### GetPm25
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetPm25() GetOrganizationSensorReadingsHistory200ResponseInnerPm25`
-
-GetPm25 returns the Pm25 field if non-nil, zero value otherwise.
-
-### GetPm25Ok
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetPm25Ok() (*GetOrganizationSensorReadingsHistory200ResponseInnerPm25, bool)`
-
-GetPm25Ok returns a tuple with the Pm25 field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetPm25
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) SetPm25(v GetOrganizationSensorReadingsHistory200ResponseInnerPm25)`
-
-SetPm25 sets Pm25 field to given value.
-
-### HasPm25
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) HasPm25() bool`
-
-HasPm25 returns a boolean if a field has been set.
-
-### GetNoise
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetNoise() GetOrganizationSensorReadingsHistory200ResponseInnerNoise`
-
-GetNoise returns the Noise field if non-nil, zero value otherwise.
-
-### GetNoiseOk
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetNoiseOk() (*GetOrganizationSensorReadingsHistory200ResponseInnerNoise, bool)`
-
-GetNoiseOk returns a tuple with the Noise field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetNoise
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) SetNoise(v GetOrganizationSensorReadingsHistory200ResponseInnerNoise)`
-
-SetNoise sets Noise field to given value.
-
-### HasNoise
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) HasNoise() bool`
-
-HasNoise returns a boolean if a field has been set.
-
-### GetIndoorAirQuality
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetIndoorAirQuality() GetOrganizationSensorReadingsHistory200ResponseInnerIndoorAirQuality`
-
-GetIndoorAirQuality returns the IndoorAirQuality field if non-nil, zero value otherwise.
-
-### GetIndoorAirQualityOk
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetIndoorAirQualityOk() (*GetOrganizationSensorReadingsHistory200ResponseInnerIndoorAirQuality, bool)`
-
-GetIndoorAirQualityOk returns a tuple with the IndoorAirQuality field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetIndoorAirQuality
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) SetIndoorAirQuality(v GetOrganizationSensorReadingsHistory200ResponseInnerIndoorAirQuality)`
-
-SetIndoorAirQuality sets IndoorAirQuality field to given value.
-
-### HasIndoorAirQuality
-
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) HasIndoorAirQuality() bool`
-
-HasIndoorAirQuality returns a boolean if a field has been set.
+HasBattery returns a boolean if a field has been set.
 
 ### GetButton
 
@@ -363,30 +188,205 @@ SetButton sets Button field to given value.
 
 HasButton returns a boolean if a field has been set.
 
-### GetBattery
+### GetDoor
 
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetBattery() GetOrganizationSensorReadingsHistory200ResponseInnerBattery`
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetDoor() GetOrganizationSensorReadingsHistory200ResponseInnerDoor`
 
-GetBattery returns the Battery field if non-nil, zero value otherwise.
+GetDoor returns the Door field if non-nil, zero value otherwise.
 
-### GetBatteryOk
+### GetDoorOk
 
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetBatteryOk() (*GetOrganizationSensorReadingsHistory200ResponseInnerBattery, bool)`
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetDoorOk() (*GetOrganizationSensorReadingsHistory200ResponseInnerDoor, bool)`
 
-GetBatteryOk returns a tuple with the Battery field if it's non-nil, zero value otherwise
+GetDoorOk returns a tuple with the Door field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetBattery
+### SetDoor
 
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) SetBattery(v GetOrganizationSensorReadingsHistory200ResponseInnerBattery)`
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) SetDoor(v GetOrganizationSensorReadingsHistory200ResponseInnerDoor)`
 
-SetBattery sets Battery field to given value.
+SetDoor sets Door field to given value.
 
-### HasBattery
+### HasDoor
 
-`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) HasBattery() bool`
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) HasDoor() bool`
 
-HasBattery returns a boolean if a field has been set.
+HasDoor returns a boolean if a field has been set.
+
+### GetHumidity
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetHumidity() GetOrganizationSensorReadingsHistory200ResponseInnerHumidity`
+
+GetHumidity returns the Humidity field if non-nil, zero value otherwise.
+
+### GetHumidityOk
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetHumidityOk() (*GetOrganizationSensorReadingsHistory200ResponseInnerHumidity, bool)`
+
+GetHumidityOk returns a tuple with the Humidity field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetHumidity
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) SetHumidity(v GetOrganizationSensorReadingsHistory200ResponseInnerHumidity)`
+
+SetHumidity sets Humidity field to given value.
+
+### HasHumidity
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) HasHumidity() bool`
+
+HasHumidity returns a boolean if a field has been set.
+
+### GetIndoorAirQuality
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetIndoorAirQuality() GetOrganizationSensorReadingsHistory200ResponseInnerIndoorAirQuality`
+
+GetIndoorAirQuality returns the IndoorAirQuality field if non-nil, zero value otherwise.
+
+### GetIndoorAirQualityOk
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetIndoorAirQualityOk() (*GetOrganizationSensorReadingsHistory200ResponseInnerIndoorAirQuality, bool)`
+
+GetIndoorAirQualityOk returns a tuple with the IndoorAirQuality field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetIndoorAirQuality
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) SetIndoorAirQuality(v GetOrganizationSensorReadingsHistory200ResponseInnerIndoorAirQuality)`
+
+SetIndoorAirQuality sets IndoorAirQuality field to given value.
+
+### HasIndoorAirQuality
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) HasIndoorAirQuality() bool`
+
+HasIndoorAirQuality returns a boolean if a field has been set.
+
+### GetNoise
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetNoise() GetOrganizationSensorReadingsHistory200ResponseInnerNoise`
+
+GetNoise returns the Noise field if non-nil, zero value otherwise.
+
+### GetNoiseOk
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetNoiseOk() (*GetOrganizationSensorReadingsHistory200ResponseInnerNoise, bool)`
+
+GetNoiseOk returns a tuple with the Noise field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetNoise
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) SetNoise(v GetOrganizationSensorReadingsHistory200ResponseInnerNoise)`
+
+SetNoise sets Noise field to given value.
+
+### HasNoise
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) HasNoise() bool`
+
+HasNoise returns a boolean if a field has been set.
+
+### GetPm25
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetPm25() GetOrganizationSensorReadingsHistory200ResponseInnerPm25`
+
+GetPm25 returns the Pm25 field if non-nil, zero value otherwise.
+
+### GetPm25Ok
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetPm25Ok() (*GetOrganizationSensorReadingsHistory200ResponseInnerPm25, bool)`
+
+GetPm25Ok returns a tuple with the Pm25 field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPm25
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) SetPm25(v GetOrganizationSensorReadingsHistory200ResponseInnerPm25)`
+
+SetPm25 sets Pm25 field to given value.
+
+### HasPm25
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) HasPm25() bool`
+
+HasPm25 returns a boolean if a field has been set.
+
+### GetTemperature
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetTemperature() GetOrganizationSensorReadingsHistory200ResponseInnerTemperature`
+
+GetTemperature returns the Temperature field if non-nil, zero value otherwise.
+
+### GetTemperatureOk
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetTemperatureOk() (*GetOrganizationSensorReadingsHistory200ResponseInnerTemperature, bool)`
+
+GetTemperatureOk returns a tuple with the Temperature field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTemperature
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) SetTemperature(v GetOrganizationSensorReadingsHistory200ResponseInnerTemperature)`
+
+SetTemperature sets Temperature field to given value.
+
+### HasTemperature
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) HasTemperature() bool`
+
+HasTemperature returns a boolean if a field has been set.
+
+### GetTvoc
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetTvoc() GetOrganizationSensorReadingsHistory200ResponseInnerTvoc`
+
+GetTvoc returns the Tvoc field if non-nil, zero value otherwise.
+
+### GetTvocOk
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetTvocOk() (*GetOrganizationSensorReadingsHistory200ResponseInnerTvoc, bool)`
+
+GetTvocOk returns a tuple with the Tvoc field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTvoc
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) SetTvoc(v GetOrganizationSensorReadingsHistory200ResponseInnerTvoc)`
+
+SetTvoc sets Tvoc field to given value.
+
+### HasTvoc
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) HasTvoc() bool`
+
+HasTvoc returns a boolean if a field has been set.
+
+### GetWater
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetWater() GetOrganizationSensorReadingsHistory200ResponseInnerWater`
+
+GetWater returns the Water field if non-nil, zero value otherwise.
+
+### GetWaterOk
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) GetWaterOk() (*GetOrganizationSensorReadingsHistory200ResponseInnerWater, bool)`
+
+GetWaterOk returns a tuple with the Water field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetWater
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) SetWater(v GetOrganizationSensorReadingsHistory200ResponseInnerWater)`
+
+SetWater sets Water field to given value.
+
+### HasWater
+
+`func (o *GetOrganizationSensorReadingsHistory200ResponseInner) HasWater() bool`
+
+HasWater returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

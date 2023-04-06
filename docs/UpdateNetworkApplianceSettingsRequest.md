@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ClientTrackingMethod** | Pointer to **string** | Client tracking method of a network | [optional] 
 **DeploymentMode** | Pointer to **string** | Deployment mode of a network | [optional] 
+**DynamicDns** | Pointer to [**UpdateNetworkApplianceSettingsRequestDynamicDns**](UpdateNetworkApplianceSettingsRequestDynamicDns.md) |  | [optional] 
 
 ## Methods
 
@@ -75,6 +76,31 @@ SetDeploymentMode sets DeploymentMode field to given value.
 `func (o *UpdateNetworkApplianceSettingsRequest) HasDeploymentMode() bool`
 
 HasDeploymentMode returns a boolean if a field has been set.
+
+### GetDynamicDns
+
+`func (o *UpdateNetworkApplianceSettingsRequest) GetDynamicDns() UpdateNetworkApplianceSettingsRequestDynamicDns`
+
+GetDynamicDns returns the DynamicDns field if non-nil, zero value otherwise.
+
+### GetDynamicDnsOk
+
+`func (o *UpdateNetworkApplianceSettingsRequest) GetDynamicDnsOk() (*UpdateNetworkApplianceSettingsRequestDynamicDns, bool)`
+
+GetDynamicDnsOk returns a tuple with the DynamicDns field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDynamicDns
+
+`func (o *UpdateNetworkApplianceSettingsRequest) SetDynamicDns(v UpdateNetworkApplianceSettingsRequestDynamicDns)`
+
+SetDynamicDns sets DynamicDns field to given value.
+
+### HasDynamicDns
+
+`func (o *UpdateNetworkApplianceSettingsRequest) HasDynamicDns() bool`
+
+HasDynamicDns returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

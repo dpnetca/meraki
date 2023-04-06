@@ -21,6 +21,7 @@ Name | Type | Description | Notes
 **AllowSimultaneousLogins** | Pointer to **bool** | Whether or not to allow simultaneous logins from different devices. | [optional] 
 **Billing** | Pointer to [**GetNetworkWirelessSsidSplashSettings200ResponseBilling**](GetNetworkWirelessSsidSplashSettings200ResponseBilling.md) |  | [optional] 
 **SentryEnrollment** | Pointer to [**GetNetworkWirelessSsidSplashSettings200ResponseSentryEnrollment**](GetNetworkWirelessSsidSplashSettings200ResponseSentryEnrollment.md) |  | [optional] 
+**SelfRegistration** | Pointer to [**GetNetworkWirelessSsidSplashSettings200ResponseSelfRegistration**](GetNetworkWirelessSsidSplashSettings200ResponseSelfRegistration.md) |  | [optional] 
 
 ## Methods
 
@@ -465,6 +466,31 @@ SetSentryEnrollment sets SentryEnrollment field to given value.
 `func (o *GetNetworkWirelessSsidSplashSettings200Response) HasSentryEnrollment() bool`
 
 HasSentryEnrollment returns a boolean if a field has been set.
+
+### GetSelfRegistration
+
+`func (o *GetNetworkWirelessSsidSplashSettings200Response) GetSelfRegistration() GetNetworkWirelessSsidSplashSettings200ResponseSelfRegistration`
+
+GetSelfRegistration returns the SelfRegistration field if non-nil, zero value otherwise.
+
+### GetSelfRegistrationOk
+
+`func (o *GetNetworkWirelessSsidSplashSettings200Response) GetSelfRegistrationOk() (*GetNetworkWirelessSsidSplashSettings200ResponseSelfRegistration, bool)`
+
+GetSelfRegistrationOk returns a tuple with the SelfRegistration field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSelfRegistration
+
+`func (o *GetNetworkWirelessSsidSplashSettings200Response) SetSelfRegistration(v GetNetworkWirelessSsidSplashSettings200ResponseSelfRegistration)`
+
+SetSelfRegistration sets SelfRegistration field to given value.
+
+### HasSelfRegistration
+
+`func (o *GetNetworkWirelessSsidSplashSettings200Response) HasSelfRegistration() bool`
+
+HasSelfRegistration returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

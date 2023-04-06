@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Ts** | Pointer to **time.Time** | Last time the DHCPv4 server was acked. | [optional] 
+**Ts** | Pointer to **time.Time** | Last time the server was acked. | [optional] 
 **Ipv4** | Pointer to [**GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerLastAckIpv4**](GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerLastAckIpv4.md) |  | [optional] 
 
 ## Methods

@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **Name** | **string** | Name of the access policy | 
 **RadiusServers** | [**[]CreateNetworkSwitchAccessPolicyRequestRadiusServersInner**](CreateNetworkSwitchAccessPolicyRequestRadiusServersInner.md) | List of RADIUS servers to require connecting devices to authenticate against before granting network access | 
 **Radius** | Pointer to [**GetNetworkSwitchAccessPolicies200ResponseInnerRadius**](GetNetworkSwitchAccessPolicies200ResponseInnerRadius.md) |  | [optional] 
+**GuestPortBouncing** | Pointer to **bool** | If enabled, Meraki devices will periodically send access-request messages to these RADIUS servers | [optional] 
 **RadiusTestingEnabled** | **bool** | If enabled, Meraki devices will periodically send access-request messages to these RADIUS servers | 
 **RadiusCoaSupportEnabled** | **bool** | Change of authentication for RADIUS re-authentication and disconnection | 
 **RadiusAccountingEnabled** | **bool** | Enable to send start, interim-update and stop messages to a configured RADIUS accounting server for tracking connected clients | 
@@ -104,6 +105,31 @@ SetRadius sets Radius field to given value.
 `func (o *CreateNetworkSwitchAccessPolicyRequest) HasRadius() bool`
 
 HasRadius returns a boolean if a field has been set.
+
+### GetGuestPortBouncing
+
+`func (o *CreateNetworkSwitchAccessPolicyRequest) GetGuestPortBouncing() bool`
+
+GetGuestPortBouncing returns the GuestPortBouncing field if non-nil, zero value otherwise.
+
+### GetGuestPortBouncingOk
+
+`func (o *CreateNetworkSwitchAccessPolicyRequest) GetGuestPortBouncingOk() (*bool, bool)`
+
+GetGuestPortBouncingOk returns a tuple with the GuestPortBouncing field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetGuestPortBouncing
+
+`func (o *CreateNetworkSwitchAccessPolicyRequest) SetGuestPortBouncing(v bool)`
+
+SetGuestPortBouncing sets GuestPortBouncing field to given value.
+
+### HasGuestPortBouncing
+
+`func (o *CreateNetworkSwitchAccessPolicyRequest) HasGuestPortBouncing() bool`
+
+HasGuestPortBouncing returns a boolean if a field has been set.
 
 ### GetRadiusTestingEnabled
 

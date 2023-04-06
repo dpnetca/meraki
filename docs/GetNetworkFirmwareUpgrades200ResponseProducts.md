@@ -5,13 +5,11 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Wireless** | Pointer to [**GetNetworkFirmwareUpgrades200ResponseProductsWireless**](GetNetworkFirmwareUpgrades200ResponseProductsWireless.md) |  | [optional] 
-**Switch** | Pointer to [**GetNetworkFirmwareUpgrades200ResponseProductsWireless**](GetNetworkFirmwareUpgrades200ResponseProductsWireless.md) |  | [optional] 
 **Appliance** | Pointer to [**GetNetworkFirmwareUpgrades200ResponseProductsWireless**](GetNetworkFirmwareUpgrades200ResponseProductsWireless.md) |  | [optional] 
+**Switch** | Pointer to [**GetNetworkFirmwareUpgrades200ResponseProductsWireless**](GetNetworkFirmwareUpgrades200ResponseProductsWireless.md) |  | [optional] 
 **Camera** | Pointer to [**GetNetworkFirmwareUpgrades200ResponseProductsWireless**](GetNetworkFirmwareUpgrades200ResponseProductsWireless.md) |  | [optional] 
-**VmxHost** | Pointer to [**GetNetworkFirmwareUpgrades200ResponseProductsWireless**](GetNetworkFirmwareUpgrades200ResponseProductsWireless.md) |  | [optional] 
-**Environmental** | Pointer to [**GetNetworkFirmwareUpgrades200ResponseProductsWireless**](GetNetworkFirmwareUpgrades200ResponseProductsWireless.md) |  | [optional] 
-**Sensor** | Pointer to [**GetNetworkFirmwareUpgrades200ResponseProductsWireless**](GetNetworkFirmwareUpgrades200ResponseProductsWireless.md) |  | [optional] 
 **CellularGateway** | Pointer to [**GetNetworkFirmwareUpgrades200ResponseProductsWireless**](GetNetworkFirmwareUpgrades200ResponseProductsWireless.md) |  | [optional] 
+**Sensor** | Pointer to [**GetNetworkFirmwareUpgrades200ResponseProductsWireless**](GetNetworkFirmwareUpgrades200ResponseProductsWireless.md) |  | [optional] 
 
 ## Methods
 
@@ -57,31 +55,6 @@ SetWireless sets Wireless field to given value.
 
 HasWireless returns a boolean if a field has been set.
 
-### GetSwitch
-
-`func (o *GetNetworkFirmwareUpgrades200ResponseProducts) GetSwitch() GetNetworkFirmwareUpgrades200ResponseProductsWireless`
-
-GetSwitch returns the Switch field if non-nil, zero value otherwise.
-
-### GetSwitchOk
-
-`func (o *GetNetworkFirmwareUpgrades200ResponseProducts) GetSwitchOk() (*GetNetworkFirmwareUpgrades200ResponseProductsWireless, bool)`
-
-GetSwitchOk returns a tuple with the Switch field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSwitch
-
-`func (o *GetNetworkFirmwareUpgrades200ResponseProducts) SetSwitch(v GetNetworkFirmwareUpgrades200ResponseProductsWireless)`
-
-SetSwitch sets Switch field to given value.
-
-### HasSwitch
-
-`func (o *GetNetworkFirmwareUpgrades200ResponseProducts) HasSwitch() bool`
-
-HasSwitch returns a boolean if a field has been set.
-
 ### GetAppliance
 
 `func (o *GetNetworkFirmwareUpgrades200ResponseProducts) GetAppliance() GetNetworkFirmwareUpgrades200ResponseProductsWireless`
@@ -106,6 +79,31 @@ SetAppliance sets Appliance field to given value.
 `func (o *GetNetworkFirmwareUpgrades200ResponseProducts) HasAppliance() bool`
 
 HasAppliance returns a boolean if a field has been set.
+
+### GetSwitch
+
+`func (o *GetNetworkFirmwareUpgrades200ResponseProducts) GetSwitch() GetNetworkFirmwareUpgrades200ResponseProductsWireless`
+
+GetSwitch returns the Switch field if non-nil, zero value otherwise.
+
+### GetSwitchOk
+
+`func (o *GetNetworkFirmwareUpgrades200ResponseProducts) GetSwitchOk() (*GetNetworkFirmwareUpgrades200ResponseProductsWireless, bool)`
+
+GetSwitchOk returns a tuple with the Switch field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSwitch
+
+`func (o *GetNetworkFirmwareUpgrades200ResponseProducts) SetSwitch(v GetNetworkFirmwareUpgrades200ResponseProductsWireless)`
+
+SetSwitch sets Switch field to given value.
+
+### HasSwitch
+
+`func (o *GetNetworkFirmwareUpgrades200ResponseProducts) HasSwitch() bool`
+
+HasSwitch returns a boolean if a field has been set.
 
 ### GetCamera
 
@@ -132,55 +130,30 @@ SetCamera sets Camera field to given value.
 
 HasCamera returns a boolean if a field has been set.
 
-### GetVmxHost
+### GetCellularGateway
 
-`func (o *GetNetworkFirmwareUpgrades200ResponseProducts) GetVmxHost() GetNetworkFirmwareUpgrades200ResponseProductsWireless`
+`func (o *GetNetworkFirmwareUpgrades200ResponseProducts) GetCellularGateway() GetNetworkFirmwareUpgrades200ResponseProductsWireless`
 
-GetVmxHost returns the VmxHost field if non-nil, zero value otherwise.
+GetCellularGateway returns the CellularGateway field if non-nil, zero value otherwise.
 
-### GetVmxHostOk
+### GetCellularGatewayOk
 
-`func (o *GetNetworkFirmwareUpgrades200ResponseProducts) GetVmxHostOk() (*GetNetworkFirmwareUpgrades200ResponseProductsWireless, bool)`
+`func (o *GetNetworkFirmwareUpgrades200ResponseProducts) GetCellularGatewayOk() (*GetNetworkFirmwareUpgrades200ResponseProductsWireless, bool)`
 
-GetVmxHostOk returns a tuple with the VmxHost field if it's non-nil, zero value otherwise
+GetCellularGatewayOk returns a tuple with the CellularGateway field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetVmxHost
+### SetCellularGateway
 
-`func (o *GetNetworkFirmwareUpgrades200ResponseProducts) SetVmxHost(v GetNetworkFirmwareUpgrades200ResponseProductsWireless)`
+`func (o *GetNetworkFirmwareUpgrades200ResponseProducts) SetCellularGateway(v GetNetworkFirmwareUpgrades200ResponseProductsWireless)`
 
-SetVmxHost sets VmxHost field to given value.
+SetCellularGateway sets CellularGateway field to given value.
 
-### HasVmxHost
+### HasCellularGateway
 
-`func (o *GetNetworkFirmwareUpgrades200ResponseProducts) HasVmxHost() bool`
+`func (o *GetNetworkFirmwareUpgrades200ResponseProducts) HasCellularGateway() bool`
 
-HasVmxHost returns a boolean if a field has been set.
-
-### GetEnvironmental
-
-`func (o *GetNetworkFirmwareUpgrades200ResponseProducts) GetEnvironmental() GetNetworkFirmwareUpgrades200ResponseProductsWireless`
-
-GetEnvironmental returns the Environmental field if non-nil, zero value otherwise.
-
-### GetEnvironmentalOk
-
-`func (o *GetNetworkFirmwareUpgrades200ResponseProducts) GetEnvironmentalOk() (*GetNetworkFirmwareUpgrades200ResponseProductsWireless, bool)`
-
-GetEnvironmentalOk returns a tuple with the Environmental field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetEnvironmental
-
-`func (o *GetNetworkFirmwareUpgrades200ResponseProducts) SetEnvironmental(v GetNetworkFirmwareUpgrades200ResponseProductsWireless)`
-
-SetEnvironmental sets Environmental field to given value.
-
-### HasEnvironmental
-
-`func (o *GetNetworkFirmwareUpgrades200ResponseProducts) HasEnvironmental() bool`
-
-HasEnvironmental returns a boolean if a field has been set.
+HasCellularGateway returns a boolean if a field has been set.
 
 ### GetSensor
 
@@ -206,31 +179,6 @@ SetSensor sets Sensor field to given value.
 `func (o *GetNetworkFirmwareUpgrades200ResponseProducts) HasSensor() bool`
 
 HasSensor returns a boolean if a field has been set.
-
-### GetCellularGateway
-
-`func (o *GetNetworkFirmwareUpgrades200ResponseProducts) GetCellularGateway() GetNetworkFirmwareUpgrades200ResponseProductsWireless`
-
-GetCellularGateway returns the CellularGateway field if non-nil, zero value otherwise.
-
-### GetCellularGatewayOk
-
-`func (o *GetNetworkFirmwareUpgrades200ResponseProducts) GetCellularGatewayOk() (*GetNetworkFirmwareUpgrades200ResponseProductsWireless, bool)`
-
-GetCellularGatewayOk returns a tuple with the CellularGateway field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCellularGateway
-
-`func (o *GetNetworkFirmwareUpgrades200ResponseProducts) SetCellularGateway(v GetNetworkFirmwareUpgrades200ResponseProductsWireless)`
-
-SetCellularGateway sets CellularGateway field to given value.
-
-### HasCellularGateway
-
-`func (o *GetNetworkFirmwareUpgrades200ResponseProducts) HasCellularGateway() bool`
-
-HasCellularGateway returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

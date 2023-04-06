@@ -5,9 +5,9 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Timeout** | Pointer to **int32** | General EAP timeout in seconds. | [optional] 
-**Identity** | Pointer to [**UpdateNetworkWirelessSsidEapOverrideRequestIdentity**](UpdateNetworkWirelessSsidEapOverrideRequestIdentity.md) |  | [optional] 
+**Identity** | Pointer to [**GetNetworkWirelessSsidEapOverride200ResponseIdentity**](GetNetworkWirelessSsidEapOverride200ResponseIdentity.md) |  | [optional] 
 **MaxRetries** | Pointer to **int32** | Maximum number of general EAP retries. | [optional] 
-**EapolKey** | Pointer to [**UpdateNetworkWirelessSsidEapOverrideRequestEapolKey**](UpdateNetworkWirelessSsidEapOverrideRequestEapolKey.md) |  | [optional] 
+**EapolKey** | Pointer to [**GetNetworkWirelessSsidEapOverride200ResponseEapolKey**](GetNetworkWirelessSsidEapOverride200ResponseEapolKey.md) |  | [optional] 
 
 ## Methods
 
@@ -55,20 +55,20 @@ HasTimeout returns a boolean if a field has been set.
 
 ### GetIdentity
 
-`func (o *UpdateNetworkWirelessSsidEapOverrideRequest) GetIdentity() UpdateNetworkWirelessSsidEapOverrideRequestIdentity`
+`func (o *UpdateNetworkWirelessSsidEapOverrideRequest) GetIdentity() GetNetworkWirelessSsidEapOverride200ResponseIdentity`
 
 GetIdentity returns the Identity field if non-nil, zero value otherwise.
 
 ### GetIdentityOk
 
-`func (o *UpdateNetworkWirelessSsidEapOverrideRequest) GetIdentityOk() (*UpdateNetworkWirelessSsidEapOverrideRequestIdentity, bool)`
+`func (o *UpdateNetworkWirelessSsidEapOverrideRequest) GetIdentityOk() (*GetNetworkWirelessSsidEapOverride200ResponseIdentity, bool)`
 
 GetIdentityOk returns a tuple with the Identity field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetIdentity
 
-`func (o *UpdateNetworkWirelessSsidEapOverrideRequest) SetIdentity(v UpdateNetworkWirelessSsidEapOverrideRequestIdentity)`
+`func (o *UpdateNetworkWirelessSsidEapOverrideRequest) SetIdentity(v GetNetworkWirelessSsidEapOverride200ResponseIdentity)`
 
 SetIdentity sets Identity field to given value.
 
@@ -105,20 +105,20 @@ HasMaxRetries returns a boolean if a field has been set.
 
 ### GetEapolKey
 
-`func (o *UpdateNetworkWirelessSsidEapOverrideRequest) GetEapolKey() UpdateNetworkWirelessSsidEapOverrideRequestEapolKey`
+`func (o *UpdateNetworkWirelessSsidEapOverrideRequest) GetEapolKey() GetNetworkWirelessSsidEapOverride200ResponseEapolKey`
 
 GetEapolKey returns the EapolKey field if non-nil, zero value otherwise.
 
 ### GetEapolKeyOk
 
-`func (o *UpdateNetworkWirelessSsidEapOverrideRequest) GetEapolKeyOk() (*UpdateNetworkWirelessSsidEapOverrideRequestEapolKey, bool)`
+`func (o *UpdateNetworkWirelessSsidEapOverrideRequest) GetEapolKeyOk() (*GetNetworkWirelessSsidEapOverride200ResponseEapolKey, bool)`
 
 GetEapolKeyOk returns a tuple with the EapolKey field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetEapolKey
 
-`func (o *UpdateNetworkWirelessSsidEapOverrideRequest) SetEapolKey(v UpdateNetworkWirelessSsidEapOverrideRequestEapolKey)`
+`func (o *UpdateNetworkWirelessSsidEapOverrideRequest) SetEapolKey(v GetNetworkWirelessSsidEapOverride200ResponseEapolKey)`
 
 SetEapolKey sets EapolKey field to given value.
 

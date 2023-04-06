@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **Name** | Pointer to **string** | Name of the access policy | [optional] 
 **RadiusServers** | Pointer to [**[]CreateNetworkSwitchAccessPolicyRequestRadiusServersInner**](CreateNetworkSwitchAccessPolicyRequestRadiusServersInner.md) | List of RADIUS servers to require connecting devices to authenticate against before granting network access | [optional] 
 **Radius** | Pointer to [**GetNetworkSwitchAccessPolicies200ResponseInnerRadius**](GetNetworkSwitchAccessPolicies200ResponseInnerRadius.md) |  | [optional] 
+**GuestPortBouncing** | Pointer to **bool** | If enabled, Meraki devices will periodically send access-request messages to these RADIUS servers | [optional] 
 **RadiusTestingEnabled** | Pointer to **bool** | If enabled, Meraki devices will periodically send access-request messages to these RADIUS servers | [optional] 
 **RadiusCoaSupportEnabled** | Pointer to **bool** | Change of authentication for RADIUS re-authentication and disconnection | [optional] 
 **RadiusAccountingEnabled** | Pointer to **bool** | Enable to send start, interim-update and stop messages to a configured RADIUS accounting server for tracking connected clients | [optional] 
@@ -114,6 +115,31 @@ SetRadius sets Radius field to given value.
 `func (o *UpdateNetworkSwitchAccessPolicyRequest) HasRadius() bool`
 
 HasRadius returns a boolean if a field has been set.
+
+### GetGuestPortBouncing
+
+`func (o *UpdateNetworkSwitchAccessPolicyRequest) GetGuestPortBouncing() bool`
+
+GetGuestPortBouncing returns the GuestPortBouncing field if non-nil, zero value otherwise.
+
+### GetGuestPortBouncingOk
+
+`func (o *UpdateNetworkSwitchAccessPolicyRequest) GetGuestPortBouncingOk() (*bool, bool)`
+
+GetGuestPortBouncingOk returns a tuple with the GuestPortBouncing field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetGuestPortBouncing
+
+`func (o *UpdateNetworkSwitchAccessPolicyRequest) SetGuestPortBouncing(v bool)`
+
+SetGuestPortBouncing sets GuestPortBouncing field to given value.
+
+### HasGuestPortBouncing
+
+`func (o *UpdateNetworkSwitchAccessPolicyRequest) HasGuestPortBouncing() bool`
+
+HasGuestPortBouncing returns a boolean if a field has been set.
 
 ### GetRadiusTestingEnabled
 

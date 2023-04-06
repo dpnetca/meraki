@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **string** | Name of the Dashboard branding policy. | 
-**Enabled** | **bool** | Boolean indicating whether this policy is enabled. | 
-**AdminSettings** | [**CreateOrganizationBrandingPolicyRequestAdminSettings**](CreateOrganizationBrandingPolicyRequestAdminSettings.md) |  | 
+**Name** | Pointer to **string** | Name of the Dashboard branding policy. | [optional] 
+**Enabled** | Pointer to **bool** | Boolean indicating whether this policy is enabled. | [optional] 
+**AdminSettings** | Pointer to [**GetOrganizationBrandingPolicies200ResponseInnerAdminSettings**](GetOrganizationBrandingPolicies200ResponseInnerAdminSettings.md) |  | [optional] 
 **HelpSettings** | Pointer to [**CreateOrganizationBrandingPolicyRequestHelpSettings**](CreateOrganizationBrandingPolicyRequestHelpSettings.md) |  | [optional] 
 **CustomLogo** | Pointer to [**CreateOrganizationBrandingPolicyRequestCustomLogo**](CreateOrganizationBrandingPolicyRequestCustomLogo.md) |  | [optional] 
 
@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 
 ### NewCreateOrganizationBrandingPolicyRequest
 
-`func NewCreateOrganizationBrandingPolicyRequest(name string, enabled bool, adminSettings CreateOrganizationBrandingPolicyRequestAdminSettings, ) *CreateOrganizationBrandingPolicyRequest`
+`func NewCreateOrganizationBrandingPolicyRequest() *CreateOrganizationBrandingPolicyRequest`
 
 NewCreateOrganizationBrandingPolicyRequest instantiates a new CreateOrganizationBrandingPolicyRequest object
 This constructor will assign default values to properties that have it defined,
@@ -48,6 +48,11 @@ and a boolean to check if the value has been set.
 
 SetName sets Name field to given value.
 
+### HasName
+
+`func (o *CreateOrganizationBrandingPolicyRequest) HasName() bool`
+
+HasName returns a boolean if a field has been set.
 
 ### GetEnabled
 
@@ -68,26 +73,36 @@ and a boolean to check if the value has been set.
 
 SetEnabled sets Enabled field to given value.
 
+### HasEnabled
+
+`func (o *CreateOrganizationBrandingPolicyRequest) HasEnabled() bool`
+
+HasEnabled returns a boolean if a field has been set.
 
 ### GetAdminSettings
 
-`func (o *CreateOrganizationBrandingPolicyRequest) GetAdminSettings() CreateOrganizationBrandingPolicyRequestAdminSettings`
+`func (o *CreateOrganizationBrandingPolicyRequest) GetAdminSettings() GetOrganizationBrandingPolicies200ResponseInnerAdminSettings`
 
 GetAdminSettings returns the AdminSettings field if non-nil, zero value otherwise.
 
 ### GetAdminSettingsOk
 
-`func (o *CreateOrganizationBrandingPolicyRequest) GetAdminSettingsOk() (*CreateOrganizationBrandingPolicyRequestAdminSettings, bool)`
+`func (o *CreateOrganizationBrandingPolicyRequest) GetAdminSettingsOk() (*GetOrganizationBrandingPolicies200ResponseInnerAdminSettings, bool)`
 
 GetAdminSettingsOk returns a tuple with the AdminSettings field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetAdminSettings
 
-`func (o *CreateOrganizationBrandingPolicyRequest) SetAdminSettings(v CreateOrganizationBrandingPolicyRequestAdminSettings)`
+`func (o *CreateOrganizationBrandingPolicyRequest) SetAdminSettings(v GetOrganizationBrandingPolicies200ResponseInnerAdminSettings)`
 
 SetAdminSettings sets AdminSettings field to given value.
 
+### HasAdminSettings
+
+`func (o *CreateOrganizationBrandingPolicyRequest) HasAdminSettings() bool`
+
+HasAdminSettings returns a boolean if a field has been set.
 
 ### GetHelpSettings
 

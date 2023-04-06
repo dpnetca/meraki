@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**MinBitrate** | Pointer to **int32** | Sets min bitrate (Mbps) of this SSID. Can be one of &#39;1&#39;, &#39;2&#39;, &#39;5.5&#39;, &#39;6&#39;, &#39;9&#39;, &#39;11&#39;, &#39;12&#39;, &#39;18&#39;, &#39;24&#39;, &#39;36&#39;, &#39;48&#39; or &#39;54&#39;. | [optional] 
+**MinBitrate** | Pointer to **float32** | Sets min bitrate (Mbps) of this SSID. Can be one of &#39;1&#39;, &#39;2&#39;, &#39;5.5&#39;, &#39;6&#39;, &#39;9&#39;, &#39;11&#39;, &#39;12&#39;, &#39;18&#39;, &#39;24&#39;, &#39;36&#39;, &#39;48&#39; or &#39;54&#39;. | [optional] 
 **BandOperationMode** | Pointer to **string** | Choice between &#39;dual&#39;, &#39;2.4ghz&#39; or &#39;5ghz&#39;. | [optional] 
 **BandSteeringEnabled** | Pointer to **bool** | Steers client to most open band between 2.4 GHz and 5 GHz. Can be either true or false. | [optional] 
 
@@ -29,20 +29,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetMinBitrate
 
-`func (o *CreateNetworkWirelessRfProfileRequestPerSsidSettings5) GetMinBitrate() int32`
+`func (o *CreateNetworkWirelessRfProfileRequestPerSsidSettings5) GetMinBitrate() float32`
 
 GetMinBitrate returns the MinBitrate field if non-nil, zero value otherwise.
 
 ### GetMinBitrateOk
 
-`func (o *CreateNetworkWirelessRfProfileRequestPerSsidSettings5) GetMinBitrateOk() (*int32, bool)`
+`func (o *CreateNetworkWirelessRfProfileRequestPerSsidSettings5) GetMinBitrateOk() (*float32, bool)`
 
 GetMinBitrateOk returns a tuple with the MinBitrate field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMinBitrate
 
-`func (o *CreateNetworkWirelessRfProfileRequestPerSsidSettings5) SetMinBitrate(v int32)`
+`func (o *CreateNetworkWirelessRfProfileRequestPerSsidSettings5) SetMinBitrate(v float32)`
 
 SetMinBitrate sets MinBitrate field to given value.
 

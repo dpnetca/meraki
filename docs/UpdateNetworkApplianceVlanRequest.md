@@ -18,10 +18,12 @@ Name | Type | Description | Notes
 **FixedIpAssignments** | Pointer to **map[string]interface{}** | The DHCP fixed IP assignments on the VLAN. This should be an object that contains mappings from MAC addresses to objects that themselves each contain \&quot;ip\&quot; and \&quot;name\&quot; string fields. See the sample request/response for more details. | [optional] 
 **ReservedIpRanges** | Pointer to [**[]UpdateNetworkApplianceStaticRouteRequestReservedIpRangesInner**](UpdateNetworkApplianceStaticRouteRequestReservedIpRangesInner.md) | The DHCP reserved IP ranges on the VLAN | [optional] 
 **DnsNameservers** | Pointer to **string** | The DNS nameservers used for DHCP responses, either \&quot;upstream_dns\&quot;, \&quot;google_dns\&quot;, \&quot;opendns\&quot;, or a newline seperated string of IP addresses or domain names | [optional] 
-**DhcpOptions** | Pointer to [**[]UpdateNetworkApplianceVlanRequestDhcpOptionsInner**](UpdateNetworkApplianceVlanRequestDhcpOptionsInner.md) | The list of DHCP options that will be included in DHCP responses. Each object in the list should have \&quot;code\&quot;, \&quot;type\&quot;, and \&quot;value\&quot; properties. | [optional] 
+**DhcpOptions** | Pointer to [**[]GetNetworkApplianceVlans200ResponseInnerDhcpOptionsInner**](GetNetworkApplianceVlans200ResponseInnerDhcpOptionsInner.md) | The list of DHCP options that will be included in DHCP responses. Each object in the list should have \&quot;code\&quot;, \&quot;type\&quot;, and \&quot;value\&quot; properties. | [optional] 
 **TemplateVlanType** | Pointer to **string** | Type of subnetting of the VLAN. Applicable only for template network. | [optional] 
 **Cidr** | Pointer to **string** | CIDR of the pool of subnets. Applicable only for template network. Each network bound to the template will automatically pick a subnet from this pool to build its own VLAN. | [optional] 
 **Mask** | Pointer to **int32** | Mask used for the subnet of all bound to the template networks. Applicable only for template network. | [optional] 
+**Ipv6** | Pointer to [**UpdateNetworkApplianceSingleLanRequestIpv6**](UpdateNetworkApplianceSingleLanRequestIpv6.md) |  | [optional] 
+**MandatoryDhcp** | Pointer to [**GetNetworkApplianceVlans200ResponseInnerMandatoryDhcp**](GetNetworkApplianceVlans200ResponseInnerMandatoryDhcp.md) |  | [optional] 
 
 ## Methods
 
@@ -394,20 +396,20 @@ HasDnsNameservers returns a boolean if a field has been set.
 
 ### GetDhcpOptions
 
-`func (o *UpdateNetworkApplianceVlanRequest) GetDhcpOptions() []UpdateNetworkApplianceVlanRequestDhcpOptionsInner`
+`func (o *UpdateNetworkApplianceVlanRequest) GetDhcpOptions() []GetNetworkApplianceVlans200ResponseInnerDhcpOptionsInner`
 
 GetDhcpOptions returns the DhcpOptions field if non-nil, zero value otherwise.
 
 ### GetDhcpOptionsOk
 
-`func (o *UpdateNetworkApplianceVlanRequest) GetDhcpOptionsOk() (*[]UpdateNetworkApplianceVlanRequestDhcpOptionsInner, bool)`
+`func (o *UpdateNetworkApplianceVlanRequest) GetDhcpOptionsOk() (*[]GetNetworkApplianceVlans200ResponseInnerDhcpOptionsInner, bool)`
 
 GetDhcpOptionsOk returns a tuple with the DhcpOptions field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDhcpOptions
 
-`func (o *UpdateNetworkApplianceVlanRequest) SetDhcpOptions(v []UpdateNetworkApplianceVlanRequestDhcpOptionsInner)`
+`func (o *UpdateNetworkApplianceVlanRequest) SetDhcpOptions(v []GetNetworkApplianceVlans200ResponseInnerDhcpOptionsInner)`
 
 SetDhcpOptions sets DhcpOptions field to given value.
 
@@ -491,6 +493,56 @@ SetMask sets Mask field to given value.
 `func (o *UpdateNetworkApplianceVlanRequest) HasMask() bool`
 
 HasMask returns a boolean if a field has been set.
+
+### GetIpv6
+
+`func (o *UpdateNetworkApplianceVlanRequest) GetIpv6() UpdateNetworkApplianceSingleLanRequestIpv6`
+
+GetIpv6 returns the Ipv6 field if non-nil, zero value otherwise.
+
+### GetIpv6Ok
+
+`func (o *UpdateNetworkApplianceVlanRequest) GetIpv6Ok() (*UpdateNetworkApplianceSingleLanRequestIpv6, bool)`
+
+GetIpv6Ok returns a tuple with the Ipv6 field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetIpv6
+
+`func (o *UpdateNetworkApplianceVlanRequest) SetIpv6(v UpdateNetworkApplianceSingleLanRequestIpv6)`
+
+SetIpv6 sets Ipv6 field to given value.
+
+### HasIpv6
+
+`func (o *UpdateNetworkApplianceVlanRequest) HasIpv6() bool`
+
+HasIpv6 returns a boolean if a field has been set.
+
+### GetMandatoryDhcp
+
+`func (o *UpdateNetworkApplianceVlanRequest) GetMandatoryDhcp() GetNetworkApplianceVlans200ResponseInnerMandatoryDhcp`
+
+GetMandatoryDhcp returns the MandatoryDhcp field if non-nil, zero value otherwise.
+
+### GetMandatoryDhcpOk
+
+`func (o *UpdateNetworkApplianceVlanRequest) GetMandatoryDhcpOk() (*GetNetworkApplianceVlans200ResponseInnerMandatoryDhcp, bool)`
+
+GetMandatoryDhcpOk returns a tuple with the MandatoryDhcp field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetMandatoryDhcp
+
+`func (o *UpdateNetworkApplianceVlanRequest) SetMandatoryDhcp(v GetNetworkApplianceVlans200ResponseInnerMandatoryDhcp)`
+
+SetMandatoryDhcp sets MandatoryDhcp field to given value.
+
+### HasMandatoryDhcp
+
+`func (o *UpdateNetworkApplianceVlanRequest) HasMandatoryDhcp() bool`
+
+HasMandatoryDhcp returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

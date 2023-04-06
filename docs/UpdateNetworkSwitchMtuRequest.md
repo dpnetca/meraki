@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **DefaultMtuSize** | Pointer to **int32** | MTU size for the entire network. Default value is 9578. | [optional] 
-**Overrides** | Pointer to [**[]UpdateNetworkSwitchMtuRequestOverridesInner**](UpdateNetworkSwitchMtuRequestOverridesInner.md) | Override MTU size for individual switches or switch profiles. An empty array will clear overrides. | [optional] 
+**Overrides** | Pointer to [**[]GetNetworkSwitchMtu200ResponseOverridesInner**](GetNetworkSwitchMtu200ResponseOverridesInner.md) | Override MTU size for individual switches or switch profiles. An empty array will clear overrides. | [optional] 
 
 ## Methods
 
@@ -53,20 +53,20 @@ HasDefaultMtuSize returns a boolean if a field has been set.
 
 ### GetOverrides
 
-`func (o *UpdateNetworkSwitchMtuRequest) GetOverrides() []UpdateNetworkSwitchMtuRequestOverridesInner`
+`func (o *UpdateNetworkSwitchMtuRequest) GetOverrides() []GetNetworkSwitchMtu200ResponseOverridesInner`
 
 GetOverrides returns the Overrides field if non-nil, zero value otherwise.
 
 ### GetOverridesOk
 
-`func (o *UpdateNetworkSwitchMtuRequest) GetOverridesOk() (*[]UpdateNetworkSwitchMtuRequestOverridesInner, bool)`
+`func (o *UpdateNetworkSwitchMtuRequest) GetOverridesOk() (*[]GetNetworkSwitchMtu200ResponseOverridesInner, bool)`
 
 GetOverridesOk returns a tuple with the Overrides field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetOverrides
 
-`func (o *UpdateNetworkSwitchMtuRequest) SetOverrides(v []UpdateNetworkSwitchMtuRequestOverridesInner)`
+`func (o *UpdateNetworkSwitchMtuRequest) SetOverrides(v []GetNetworkSwitchMtu200ResponseOverridesInner)`
 
 SetOverrides sets Overrides field to given value.
 

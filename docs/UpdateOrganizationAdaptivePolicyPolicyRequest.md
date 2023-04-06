@@ -6,8 +6,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **SourceGroup** | Pointer to [**CreateOrganizationAdaptivePolicyPolicyRequestSourceGroup**](CreateOrganizationAdaptivePolicyPolicyRequestSourceGroup.md) |  | [optional] 
 **DestinationGroup** | Pointer to [**CreateOrganizationAdaptivePolicyPolicyRequestDestinationGroup**](CreateOrganizationAdaptivePolicyPolicyRequestDestinationGroup.md) |  | [optional] 
-**Acls** | Pointer to [**[]CreateOrganizationAdaptivePolicyPolicyRequestAclsInner**](CreateOrganizationAdaptivePolicyPolicyRequestAclsInner.md) | An ordered array of adaptive policy ACLs (each requires one unique attribute) that apply to this policy  | [optional] 
-**LastEntryRule** | Pointer to **string** | The rule to apply if there is no matching ACL  | [optional] 
+**Acls** | Pointer to [**[]CreateOrganizationAdaptivePolicyPolicyRequestAclsInner**](CreateOrganizationAdaptivePolicyPolicyRequestAclsInner.md) | An ordered array of adaptive policy ACLs (each requires one unique attribute) that apply to this policy | [optional] 
+**LastEntryRule** | Pointer to **string** | The rule to apply if there is no matching ACL | [optional] 
 
 ## Methods
 

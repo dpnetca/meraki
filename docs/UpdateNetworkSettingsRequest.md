@@ -6,8 +6,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **LocalStatusPageEnabled** | Pointer to **bool** | Enables / disables the local device status pages (&lt;a target&#x3D;&#39;_blank&#39; href&#x3D;&#39;http://my.meraki.com/&#39;&gt;my.meraki.com, &lt;/a&gt;&lt;a target&#x3D;&#39;_blank&#39; href&#x3D;&#39;http://ap.meraki.com/&#39;&gt;ap.meraki.com, &lt;/a&gt;&lt;a target&#x3D;&#39;_blank&#39; href&#x3D;&#39;http://switch.meraki.com/&#39;&gt;switch.meraki.com, &lt;/a&gt;&lt;a target&#x3D;&#39;_blank&#39; href&#x3D;&#39;http://wired.meraki.com/&#39;&gt;wired.meraki.com&lt;/a&gt;). Optional (defaults to false) | [optional] 
 **RemoteStatusPageEnabled** | Pointer to **bool** | Enables / disables access to the device status page (&lt;a target&#x3D;&#39;_blank&#39;&gt;http://[device&#39;s LAN IP])&lt;/a&gt;. Optional. Can only be set if localStatusPageEnabled is set to true | [optional] 
-**SecureConnect** | Pointer to [**UpdateNetworkSettingsRequestSecureConnect**](UpdateNetworkSettingsRequestSecureConnect.md) |  | [optional] 
 **LocalStatusPage** | Pointer to [**UpdateNetworkSettingsRequestLocalStatusPage**](UpdateNetworkSettingsRequestLocalStatusPage.md) |  | [optional] 
+**SecurePort** | Pointer to [**GetNetworkSettings200ResponseSecurePort**](GetNetworkSettings200ResponseSecurePort.md) |  | [optional] 
 
 ## Methods
 
@@ -78,31 +78,6 @@ SetRemoteStatusPageEnabled sets RemoteStatusPageEnabled field to given value.
 
 HasRemoteStatusPageEnabled returns a boolean if a field has been set.
 
-### GetSecureConnect
-
-`func (o *UpdateNetworkSettingsRequest) GetSecureConnect() UpdateNetworkSettingsRequestSecureConnect`
-
-GetSecureConnect returns the SecureConnect field if non-nil, zero value otherwise.
-
-### GetSecureConnectOk
-
-`func (o *UpdateNetworkSettingsRequest) GetSecureConnectOk() (*UpdateNetworkSettingsRequestSecureConnect, bool)`
-
-GetSecureConnectOk returns a tuple with the SecureConnect field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSecureConnect
-
-`func (o *UpdateNetworkSettingsRequest) SetSecureConnect(v UpdateNetworkSettingsRequestSecureConnect)`
-
-SetSecureConnect sets SecureConnect field to given value.
-
-### HasSecureConnect
-
-`func (o *UpdateNetworkSettingsRequest) HasSecureConnect() bool`
-
-HasSecureConnect returns a boolean if a field has been set.
-
 ### GetLocalStatusPage
 
 `func (o *UpdateNetworkSettingsRequest) GetLocalStatusPage() UpdateNetworkSettingsRequestLocalStatusPage`
@@ -127,6 +102,31 @@ SetLocalStatusPage sets LocalStatusPage field to given value.
 `func (o *UpdateNetworkSettingsRequest) HasLocalStatusPage() bool`
 
 HasLocalStatusPage returns a boolean if a field has been set.
+
+### GetSecurePort
+
+`func (o *UpdateNetworkSettingsRequest) GetSecurePort() GetNetworkSettings200ResponseSecurePort`
+
+GetSecurePort returns the SecurePort field if non-nil, zero value otherwise.
+
+### GetSecurePortOk
+
+`func (o *UpdateNetworkSettingsRequest) GetSecurePortOk() (*GetNetworkSettings200ResponseSecurePort, bool)`
+
+GetSecurePortOk returns a tuple with the SecurePort field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSecurePort
+
+`func (o *UpdateNetworkSettingsRequest) SetSecurePort(v GetNetworkSettings200ResponseSecurePort)`
+
+SetSecurePort sets SecurePort field to given value.
+
+### HasSecurePort
+
+`func (o *UpdateNetworkSettingsRequest) HasSecurePort() bool`
+
+HasSecurePort returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Address** | Pointer to **string** | IPv4 address of the DHCPv4 server. | [optional] 
-**Subnet** | Pointer to **string** | Subnet of the DHCPv4 server. | [optional] 
-**Gateway** | Pointer to **string** | IPv4 gateway address of the DHCPv4 server. | [optional] 
+**Address** | Pointer to **string** | IPv4 address of the server. | [optional] 
+**Subnet** | Pointer to **string** | Subnet of the server. | [optional] 
+**Gateway** | Pointer to **string** | IPv4 gateway address of the server. | [optional] 
 
 ## Methods
 

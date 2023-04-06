@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Name** | **string** | The name of the new template | 
 **Body** | Pointer to **string** | The liquid template used for the body of the webhook message. Either &#x60;body&#x60; or &#x60;bodyFile&#x60; must be specified. | [optional] 
-**Headers** | Pointer to **string** | The liquid template used with the webhook headers. | [optional] 
+**Headers** | Pointer to [**[]CreateNetworkWebhooksPayloadTemplateRequestHeadersInner**](CreateNetworkWebhooksPayloadTemplateRequestHeadersInner.md) | The liquid template used with the webhook headers. | [optional] 
 **BodyFile** | Pointer to **string** | A file containing liquid template used for the body of the webhook message. Either &#x60;body&#x60; or &#x60;bodyFile&#x60; must be specified. | [optional] 
 **HeadersFile** | Pointer to **string** | A file containing the liquid template used with the webhook headers. | [optional] 
 
@@ -76,20 +76,20 @@ HasBody returns a boolean if a field has been set.
 
 ### GetHeaders
 
-`func (o *CreateNetworkWebhooksPayloadTemplateRequest) GetHeaders() string`
+`func (o *CreateNetworkWebhooksPayloadTemplateRequest) GetHeaders() []CreateNetworkWebhooksPayloadTemplateRequestHeadersInner`
 
 GetHeaders returns the Headers field if non-nil, zero value otherwise.
 
 ### GetHeadersOk
 
-`func (o *CreateNetworkWebhooksPayloadTemplateRequest) GetHeadersOk() (*string, bool)`
+`func (o *CreateNetworkWebhooksPayloadTemplateRequest) GetHeadersOk() (*[]CreateNetworkWebhooksPayloadTemplateRequestHeadersInner, bool)`
 
 GetHeadersOk returns a tuple with the Headers field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetHeaders
 
-`func (o *CreateNetworkWebhooksPayloadTemplateRequest) SetHeaders(v string)`
+`func (o *CreateNetworkWebhooksPayloadTemplateRequest) SetHeaders(v []CreateNetworkWebhooksPayloadTemplateRequestHeadersInner)`
 
 SetHeaders sets Headers field to given value.
 

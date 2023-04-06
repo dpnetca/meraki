@@ -4,7 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Ip** | **string** | IP address of the neighbor. | 
+**Ip** | Pointer to **string** | The IPv4 address of the neighbor | [optional] 
+**Ipv6** | Pointer to [**UpdateNetworkApplianceVpnBgpRequestNeighborsInnerIpv6**](UpdateNetworkApplianceVpnBgpRequestNeighborsInnerIpv6.md) |  | [optional] 
 **RemoteAsNumber** | **int32** | Remote ASN of the neighbor. The remote ASN must be an integer between 1 and 4294967295. | 
 **ReceiveLimit** | Pointer to **int32** | The receive limit is the maximum number of routes that can be received from any BGP peer. The receive limit must be an integer between 0 and 4294967295. When absent, it defaults to 0. | [optional] 
 **AllowTransit** | Pointer to **bool** | When this feature is on, the Meraki device will advertise routes learned from other Autonomous Systems, thereby allowing traffic between Autonomous Systems to transit this AS. When absent, it defaults to false. | [optional] 
@@ -15,7 +16,7 @@ Name | Type | Description | Notes
 
 ### NewUpdateNetworkApplianceVpnBgpRequestNeighborsInner
 
-`func NewUpdateNetworkApplianceVpnBgpRequestNeighborsInner(ip string, remoteAsNumber int32, ebgpHoldTimer int32, ebgpMultihop int32, ) *UpdateNetworkApplianceVpnBgpRequestNeighborsInner`
+`func NewUpdateNetworkApplianceVpnBgpRequestNeighborsInner(remoteAsNumber int32, ebgpHoldTimer int32, ebgpMultihop int32, ) *UpdateNetworkApplianceVpnBgpRequestNeighborsInner`
 
 NewUpdateNetworkApplianceVpnBgpRequestNeighborsInner instantiates a new UpdateNetworkApplianceVpnBgpRequestNeighborsInner object
 This constructor will assign default values to properties that have it defined,
@@ -49,6 +50,36 @@ and a boolean to check if the value has been set.
 
 SetIp sets Ip field to given value.
 
+### HasIp
+
+`func (o *UpdateNetworkApplianceVpnBgpRequestNeighborsInner) HasIp() bool`
+
+HasIp returns a boolean if a field has been set.
+
+### GetIpv6
+
+`func (o *UpdateNetworkApplianceVpnBgpRequestNeighborsInner) GetIpv6() UpdateNetworkApplianceVpnBgpRequestNeighborsInnerIpv6`
+
+GetIpv6 returns the Ipv6 field if non-nil, zero value otherwise.
+
+### GetIpv6Ok
+
+`func (o *UpdateNetworkApplianceVpnBgpRequestNeighborsInner) GetIpv6Ok() (*UpdateNetworkApplianceVpnBgpRequestNeighborsInnerIpv6, bool)`
+
+GetIpv6Ok returns a tuple with the Ipv6 field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetIpv6
+
+`func (o *UpdateNetworkApplianceVpnBgpRequestNeighborsInner) SetIpv6(v UpdateNetworkApplianceVpnBgpRequestNeighborsInnerIpv6)`
+
+SetIpv6 sets Ipv6 field to given value.
+
+### HasIpv6
+
+`func (o *UpdateNetworkApplianceVpnBgpRequestNeighborsInner) HasIpv6() bool`
+
+HasIpv6 returns a boolean if a field has been set.
 
 ### GetRemoteAsNumber
 

@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Serial** | Pointer to **string** | Serial number of the sensor that took the readings. | [optional] 
 **Network** | Pointer to [**GetOrganizationSensorReadingsHistory200ResponseInnerNetwork**](GetOrganizationSensorReadingsHistory200ResponseInnerNetwork.md) |  | [optional] 
-**Readings** | Pointer to [**[]GetOrganizationSensorReadingsLatest200ResponseInnerReadingsInner**](GetOrganizationSensorReadingsLatest200ResponseInnerReadingsInner.md) | Array of latest readings from the sensor. | [optional] 
+**Readings** | Pointer to [**[]GetOrganizationSensorReadingsLatest200ResponseInnerReadingsInner**](GetOrganizationSensorReadingsLatest200ResponseInnerReadingsInner.md) | Array of latest readings from the sensor. Each object represents a single reading for a single metric. | [optional] 
 
 ## Methods
 

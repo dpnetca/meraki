@@ -10,14 +10,15 @@ Name | Type | Description | Notes
 **OrderNumber** | Pointer to **string** | Order number | [optional] 
 **DeviceSerial** | Pointer to **string** | Serial number of the device the license is assigned to | [optional] 
 **NetworkId** | Pointer to **string** | ID of the network the license is assigned to | [optional] 
-**State** | Pointer to **string** | The state of the license | [optional] 
+**State** | Pointer to **string** | The state of the license. All queued licenses have a status of &#x60;recentlyQueued&#x60;. | [optional] 
 **SeatCount** | Pointer to **int32** | The number of seats of the license. Only applicable to SM licenses. | [optional] 
 **TotalDurationInDays** | Pointer to **int32** | The duration of the license plus all permanently queued licenses associated with it | [optional] 
 **DurationInDays** | Pointer to **int32** | The duration of the individual license | [optional] 
-**PermanentlyQueuedLicenses** | Pointer to [**[]GetOrganizationLicenses200ResponseInnerPermanentlyQueuedLicensesInner**](GetOrganizationLicenses200ResponseInnerPermanentlyQueuedLicensesInner.md) | List of permanently queued licenses attached to the license | [optional] 
+**PermanentlyQueuedLicenses** | Pointer to [**[]GetOrganizationLicenses200ResponseInnerPermanentlyQueuedLicensesInner**](GetOrganizationLicenses200ResponseInnerPermanentlyQueuedLicensesInner.md) | DEPRECATED List of permanently queued licenses attached to the license. Instead, use /organizations/{organizationId}/licenses?deviceSerial&#x3D; to retrieved queued licenses for a given device. | [optional] 
 **ClaimDate** | Pointer to **string** | The date the license was claimed into the organization | [optional] 
 **ActivationDate** | Pointer to **string** | The date the license started burning | [optional] 
 **ExpirationDate** | Pointer to **string** | The date the license will expire | [optional] 
+**HeadLicenseId** | Pointer to **string** | The id of the head license this license is queued behind. If there is no head license, it returns nil. | [optional] 
 
 ## Methods
 
@@ -387,6 +388,31 @@ SetExpirationDate sets ExpirationDate field to given value.
 `func (o *GetOrganizationLicenses200ResponseInner) HasExpirationDate() bool`
 
 HasExpirationDate returns a boolean if a field has been set.
+
+### GetHeadLicenseId
+
+`func (o *GetOrganizationLicenses200ResponseInner) GetHeadLicenseId() string`
+
+GetHeadLicenseId returns the HeadLicenseId field if non-nil, zero value otherwise.
+
+### GetHeadLicenseIdOk
+
+`func (o *GetOrganizationLicenses200ResponseInner) GetHeadLicenseIdOk() (*string, bool)`
+
+GetHeadLicenseIdOk returns a tuple with the HeadLicenseId field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetHeadLicenseId
+
+`func (o *GetOrganizationLicenses200ResponseInner) SetHeadLicenseId(v string)`
+
+SetHeadLicenseId sets HeadLicenseId field to given value.
+
+### HasHeadLicenseId
+
+`func (o *GetOrganizationLicenses200ResponseInner) HasHeadLicenseId() bool`
+
+HasHeadLicenseId returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

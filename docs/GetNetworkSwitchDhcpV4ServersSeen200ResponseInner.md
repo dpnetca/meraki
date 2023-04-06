@@ -4,17 +4,17 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Mac** | Pointer to **string** | Mac address of the DHCPv4 server. | [optional] 
-**Vlan** | Pointer to **int32** | Vlan id of the DHCPv4 server. | [optional] 
-**Ipv4** | Pointer to [**GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerIpv4**](GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerIpv4.md) |  | [optional] 
-**ClientId** | Pointer to **string** | Client id of the DHCPv4 server if available. | [optional] 
-**IsAllowed** | Pointer to **bool** | Whether the DHCPv4 server is allowed or blocked. Always true for configured servers. | [optional] 
-**IsConfigured** | Pointer to **bool** | Whether the DHCPv4 server is configured. | [optional] 
-**LastSeenAt** | Pointer to **time.Time** | Last time the DHCPv4 server was seen. | [optional] 
-**LastAck** | Pointer to [**GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerLastAck**](GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerLastAck.md) |  | [optional] 
-**SeenBy** | Pointer to [**[]GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerSeenByInner**](GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerSeenByInner.md) | Devices that saw the DHCPv4 server. | [optional] 
-**Type** | Pointer to **string** | DHCPv4 server type. Can be a &#39;device&#39;, &#39;stack&#39;, or &#39;discovered&#39; (i.e client). | [optional] 
+**Mac** | Pointer to **string** | Mac address of the server. | [optional] 
+**Vlan** | Pointer to **int32** | Vlan id of the server. | [optional] 
+**ClientId** | Pointer to **string** | Client id of the server if available. | [optional] 
+**IsAllowed** | Pointer to **bool** | Whether the server is allowed or blocked. Always true for configured servers. | [optional] 
+**LastSeenAt** | Pointer to **time.Time** | Last time the server was seen. | [optional] 
+**SeenBy** | Pointer to [**[]GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerSeenByInner**](GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerSeenByInner.md) | Devices that saw the server. | [optional] 
+**Type** | Pointer to **string** | server type. Can be a &#39;device&#39;, &#39;stack&#39;, or &#39;discovered&#39; (i.e client). | [optional] 
 **Device** | Pointer to [**GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerDevice**](GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerDevice.md) |  | [optional] 
+**Ipv4** | Pointer to [**GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerIpv4**](GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerIpv4.md) |  | [optional] 
+**IsConfigured** | Pointer to **bool** | Whether the server is configured. | [optional] 
+**LastAck** | Pointer to [**GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerLastAck**](GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerLastAck.md) |  | [optional] 
 **LastPacket** | Pointer to [**GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerLastPacket**](GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerLastPacket.md) |  | [optional] 
 
 ## Methods
@@ -86,31 +86,6 @@ SetVlan sets Vlan field to given value.
 
 HasVlan returns a boolean if a field has been set.
 
-### GetIpv4
-
-`func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) GetIpv4() GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerIpv4`
-
-GetIpv4 returns the Ipv4 field if non-nil, zero value otherwise.
-
-### GetIpv4Ok
-
-`func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) GetIpv4Ok() (*GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerIpv4, bool)`
-
-GetIpv4Ok returns a tuple with the Ipv4 field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetIpv4
-
-`func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) SetIpv4(v GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerIpv4)`
-
-SetIpv4 sets Ipv4 field to given value.
-
-### HasIpv4
-
-`func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) HasIpv4() bool`
-
-HasIpv4 returns a boolean if a field has been set.
-
 ### GetClientId
 
 `func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) GetClientId() string`
@@ -161,31 +136,6 @@ SetIsAllowed sets IsAllowed field to given value.
 
 HasIsAllowed returns a boolean if a field has been set.
 
-### GetIsConfigured
-
-`func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) GetIsConfigured() bool`
-
-GetIsConfigured returns the IsConfigured field if non-nil, zero value otherwise.
-
-### GetIsConfiguredOk
-
-`func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) GetIsConfiguredOk() (*bool, bool)`
-
-GetIsConfiguredOk returns a tuple with the IsConfigured field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetIsConfigured
-
-`func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) SetIsConfigured(v bool)`
-
-SetIsConfigured sets IsConfigured field to given value.
-
-### HasIsConfigured
-
-`func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) HasIsConfigured() bool`
-
-HasIsConfigured returns a boolean if a field has been set.
-
 ### GetLastSeenAt
 
 `func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) GetLastSeenAt() time.Time`
@@ -210,31 +160,6 @@ SetLastSeenAt sets LastSeenAt field to given value.
 `func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) HasLastSeenAt() bool`
 
 HasLastSeenAt returns a boolean if a field has been set.
-
-### GetLastAck
-
-`func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) GetLastAck() GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerLastAck`
-
-GetLastAck returns the LastAck field if non-nil, zero value otherwise.
-
-### GetLastAckOk
-
-`func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) GetLastAckOk() (*GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerLastAck, bool)`
-
-GetLastAckOk returns a tuple with the LastAck field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetLastAck
-
-`func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) SetLastAck(v GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerLastAck)`
-
-SetLastAck sets LastAck field to given value.
-
-### HasLastAck
-
-`func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) HasLastAck() bool`
-
-HasLastAck returns a boolean if a field has been set.
 
 ### GetSeenBy
 
@@ -310,6 +235,81 @@ SetDevice sets Device field to given value.
 `func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) HasDevice() bool`
 
 HasDevice returns a boolean if a field has been set.
+
+### GetIpv4
+
+`func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) GetIpv4() GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerIpv4`
+
+GetIpv4 returns the Ipv4 field if non-nil, zero value otherwise.
+
+### GetIpv4Ok
+
+`func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) GetIpv4Ok() (*GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerIpv4, bool)`
+
+GetIpv4Ok returns a tuple with the Ipv4 field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetIpv4
+
+`func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) SetIpv4(v GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerIpv4)`
+
+SetIpv4 sets Ipv4 field to given value.
+
+### HasIpv4
+
+`func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) HasIpv4() bool`
+
+HasIpv4 returns a boolean if a field has been set.
+
+### GetIsConfigured
+
+`func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) GetIsConfigured() bool`
+
+GetIsConfigured returns the IsConfigured field if non-nil, zero value otherwise.
+
+### GetIsConfiguredOk
+
+`func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) GetIsConfiguredOk() (*bool, bool)`
+
+GetIsConfiguredOk returns a tuple with the IsConfigured field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetIsConfigured
+
+`func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) SetIsConfigured(v bool)`
+
+SetIsConfigured sets IsConfigured field to given value.
+
+### HasIsConfigured
+
+`func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) HasIsConfigured() bool`
+
+HasIsConfigured returns a boolean if a field has been set.
+
+### GetLastAck
+
+`func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) GetLastAck() GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerLastAck`
+
+GetLastAck returns the LastAck field if non-nil, zero value otherwise.
+
+### GetLastAckOk
+
+`func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) GetLastAckOk() (*GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerLastAck, bool)`
+
+GetLastAckOk returns a tuple with the LastAck field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetLastAck
+
+`func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) SetLastAck(v GetNetworkSwitchDhcpV4ServersSeen200ResponseInnerLastAck)`
+
+SetLastAck sets LastAck field to given value.
+
+### HasLastAck
+
+`func (o *GetNetworkSwitchDhcpV4ServersSeen200ResponseInner) HasLastAck() bool`
+
+HasLastAck returns a boolean if a field has been set.
 
 ### GetLastPacket
 

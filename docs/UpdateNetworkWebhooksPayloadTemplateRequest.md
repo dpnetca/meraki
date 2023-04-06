@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Name** | Pointer to **string** | The name of the template | [optional] 
 **Body** | Pointer to **string** | The liquid template used for the body of the webhook message. | [optional] 
-**Headers** | Pointer to **string** | The liquid template used with the webhook headers. | [optional] 
+**Headers** | Pointer to [**[]CreateNetworkWebhooksPayloadTemplateRequestHeadersInner**](CreateNetworkWebhooksPayloadTemplateRequestHeadersInner.md) | The liquid template used with the webhook headers. | [optional] 
 **BodyFile** | Pointer to **string** | A file containing liquid template used for the body of the webhook message. | [optional] 
 **HeadersFile** | Pointer to **string** | A file containing the liquid template used with the webhook headers. | [optional] 
 
@@ -81,20 +81,20 @@ HasBody returns a boolean if a field has been set.
 
 ### GetHeaders
 
-`func (o *UpdateNetworkWebhooksPayloadTemplateRequest) GetHeaders() string`
+`func (o *UpdateNetworkWebhooksPayloadTemplateRequest) GetHeaders() []CreateNetworkWebhooksPayloadTemplateRequestHeadersInner`
 
 GetHeaders returns the Headers field if non-nil, zero value otherwise.
 
 ### GetHeadersOk
 
-`func (o *UpdateNetworkWebhooksPayloadTemplateRequest) GetHeadersOk() (*string, bool)`
+`func (o *UpdateNetworkWebhooksPayloadTemplateRequest) GetHeadersOk() (*[]CreateNetworkWebhooksPayloadTemplateRequestHeadersInner, bool)`
 
 GetHeadersOk returns a tuple with the Headers field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetHeaders
 
-`func (o *UpdateNetworkWebhooksPayloadTemplateRequest) SetHeaders(v string)`
+`func (o *UpdateNetworkWebhooksPayloadTemplateRequest) SetHeaders(v []CreateNetworkWebhooksPayloadTemplateRequestHeadersInner)`
 
 SetHeaders sets Headers field to given value.
 

@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**MaxPower** | Pointer to **int32** | Sets max power (dBm) of 2.4Ghz band. Can be integer between 5 and 30. Defaults to 30. | [optional] 
-**MinPower** | Pointer to **int32** | Sets min power (dBm) of 2.4Ghz band. Can be integer between 5 and 30. Defaults to 5. | [optional] 
-**MinBitrate** | Pointer to **int32** | Sets min bitrate (Mbps) of 2.4Ghz band. Can be one of &#39;1&#39;, &#39;2&#39;, &#39;5.5&#39;, &#39;6&#39;, &#39;9&#39;, &#39;11&#39;, &#39;12&#39;, &#39;18&#39;, &#39;24&#39;, &#39;36&#39;, &#39;48&#39; or &#39;54&#39;. Defaults to 11. | [optional] 
+**MaxPower** | Pointer to **int32** | Sets max power (dBm) of 2.4Ghz band. Can be integer between 2 and 30. Defaults to 30. | [optional] 
+**MinPower** | Pointer to **int32** | Sets min power (dBm) of 2.4Ghz band. Can be integer between 2 and 30. Defaults to 5. | [optional] 
+**MinBitrate** | Pointer to **float32** | Sets min bitrate (Mbps) of 2.4Ghz band. Can be one of &#39;1&#39;, &#39;2&#39;, &#39;5.5&#39;, &#39;6&#39;, &#39;9&#39;, &#39;11&#39;, &#39;12&#39;, &#39;18&#39;, &#39;24&#39;, &#39;36&#39;, &#39;48&#39; or &#39;54&#39;. Defaults to 11. | [optional] 
 **ValidAutoChannels** | Pointer to **[]int32** | Sets valid auto channels for 2.4Ghz band. Can be one of &#39;1&#39;, &#39;6&#39; or &#39;11&#39;. Defaults to [1, 6, 11]. | [optional] 
 **AxEnabled** | Pointer to **bool** | Determines whether ax radio on 2.4Ghz band is on or off. Can be either true or false. If false, we highly recommend disabling band steering. Defaults to true. | [optional] 
 **Rxsop** | Pointer to **int32** | The RX-SOP level controls the sensitivity of the radio. It is strongly recommended to use RX-SOP only after consulting a wireless expert. RX-SOP can be configured in the range of -65 to -95 (dBm). A value of null will reset this to the default. | [optional] 
@@ -82,20 +82,20 @@ HasMinPower returns a boolean if a field has been set.
 
 ### GetMinBitrate
 
-`func (o *CreateNetworkWirelessRfProfileRequestTwoFourGhzSettings) GetMinBitrate() int32`
+`func (o *CreateNetworkWirelessRfProfileRequestTwoFourGhzSettings) GetMinBitrate() float32`
 
 GetMinBitrate returns the MinBitrate field if non-nil, zero value otherwise.
 
 ### GetMinBitrateOk
 
-`func (o *CreateNetworkWirelessRfProfileRequestTwoFourGhzSettings) GetMinBitrateOk() (*int32, bool)`
+`func (o *CreateNetworkWirelessRfProfileRequestTwoFourGhzSettings) GetMinBitrateOk() (*float32, bool)`
 
 GetMinBitrateOk returns a tuple with the MinBitrate field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMinBitrate
 
-`func (o *CreateNetworkWirelessRfProfileRequestTwoFourGhzSettings) SetMinBitrate(v int32)`
+`func (o *CreateNetworkWirelessRfProfileRequestTwoFourGhzSettings) SetMinBitrate(v float32)`
 
 SetMinBitrate sets MinBitrate field to given value.
 

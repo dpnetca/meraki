@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **Passphrase** | Pointer to **string** | The passphrase for client authentication | [optional] 
 **WifiPersonalNetworkId** | Pointer to **string** | The WiFi Personal Network unique identifier | [optional] 
 **Email** | Pointer to **string** | The email associated with the System&#39;s Manager User | [optional] 
+**ExpiresAt** | Pointer to **string** | Timestamp for when the Identity PSK expires, or &#39;null&#39; to never expire | [optional] 
 
 ## Methods
 
@@ -179,6 +180,31 @@ SetEmail sets Email field to given value.
 `func (o *GetNetworkWirelessSsidIdentityPsks200ResponseInner) HasEmail() bool`
 
 HasEmail returns a boolean if a field has been set.
+
+### GetExpiresAt
+
+`func (o *GetNetworkWirelessSsidIdentityPsks200ResponseInner) GetExpiresAt() string`
+
+GetExpiresAt returns the ExpiresAt field if non-nil, zero value otherwise.
+
+### GetExpiresAtOk
+
+`func (o *GetNetworkWirelessSsidIdentityPsks200ResponseInner) GetExpiresAtOk() (*string, bool)`
+
+GetExpiresAtOk returns a tuple with the ExpiresAt field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetExpiresAt
+
+`func (o *GetNetworkWirelessSsidIdentityPsks200ResponseInner) SetExpiresAt(v string)`
+
+SetExpiresAt sets ExpiresAt field to given value.
+
+### HasExpiresAt
+
+`func (o *GetNetworkWirelessSsidIdentityPsks200ResponseInner) HasExpiresAt() bool`
+
+HasExpiresAt returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -4,13 +4,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**BrandingPolicyIds** | **[]string** | A list of branding policy IDs arranged in ascending priority order (IDs later in the array have higher priority). | 
+**BrandingPolicyIds** | Pointer to **[]string** |       An ordered list of branding policy IDs that determines the priority order of how to apply the policies  | [optional] 
 
 ## Methods
 
 ### NewUpdateOrganizationBrandingPoliciesPrioritiesRequest
 
-`func NewUpdateOrganizationBrandingPoliciesPrioritiesRequest(brandingPolicyIds []string, ) *UpdateOrganizationBrandingPoliciesPrioritiesRequest`
+`func NewUpdateOrganizationBrandingPoliciesPrioritiesRequest() *UpdateOrganizationBrandingPoliciesPrioritiesRequest`
 
 NewUpdateOrganizationBrandingPoliciesPrioritiesRequest instantiates a new UpdateOrganizationBrandingPoliciesPrioritiesRequest object
 This constructor will assign default values to properties that have it defined,
@@ -44,6 +44,11 @@ and a boolean to check if the value has been set.
 
 SetBrandingPolicyIds sets BrandingPolicyIds field to given value.
 
+### HasBrandingPolicyIds
+
+`func (o *UpdateOrganizationBrandingPoliciesPrioritiesRequest) HasBrandingPolicyIds() bool`
+
+HasBrandingPolicyIds returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
